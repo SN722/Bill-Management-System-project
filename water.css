@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Light gray background */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff; /* White container background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  }
+  
+  h2 {
+    color: #333; /* Dark gray heading color */
+    margin-top: 0; /* Reset margin */
+  }
+  
+  .form {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555; /* Medium gray label color */
+  }
+  
+  input[type="text"],
+  select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    padding: 8px 15px;
+    background-color: #4CAF50; /* Green button color */
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  button:hover {
+    background-color: #45a049; /* Darker green button color on hover */
+  }
+  
+  #resetWaterButton {
+    background-color: #ff5733; /* Orange background for reset button */
+  }
+  
+  #resetWaterButton:hover {
+    background-color: #e62e00; /* Darker orange background for reset button on hover */
+  }
+  
+  .graph-container {
+    margin-top: 20px;
+  }
+  
+  canvas {
+    width: 100%;
+    height: 400px; /* Adjust the height as needed */
+    background-color: rgb(163, 212, 206);  
+  }

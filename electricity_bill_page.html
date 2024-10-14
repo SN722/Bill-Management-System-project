@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electricity Bill Page</title>
+  <link rel="stylesheet" href="electricity.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Electricity Bill </h2>
+    <div class="form-group">
+      <label for="customerId">Customer ID:</label>
+      <input type="text" id="customerId" placeholder="Enter Customer ID">
+    </div>
+    <div class="form-group">
+      <label for="customerName">Customer Name:</label>
+      <input type="text" id="customerName" placeholder="Enter Customer Name">
+    </div>
+    <div class="form-group">
+      <label for="billId">Electricity Bill Id:</label>
+      <input type="text" id="billId" placeholder="Enter Customer Bill Id">
+    </div>
+    <div class="form-group">
+      <label for="month">Select Month:</label>
+      <select id="month">
+        <option value="">Select</option>
+        <option value="january">January</option>
+        <option value="february">February</option>
+        <option value="march">March</option>
+      </select>
+    </div>
+    <button onclick="showElectricityGraph()">Show Graph</button>
+    <button id="resetElectricityButton" onclick="resetElectricityGraph()">Reset</button>
+    <div class="graph-container">
+      <canvas id="electricityChart" width="400" height="200"></canvas>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="electricity.js"></script>
+</body>
+</html>

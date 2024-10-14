@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bills</title>
+<link rel="stylesheet" href="styles.css">
+<a href= "./electricity_bill_page.html"></a>
+<a href="./water_bill_page.html"></a>
+<a href="./dth_bill_page.html"></a>
+</head>
+<body>
+  <div class="header">
+    <h1 class="heading">BILL MANAGEMENT</h1>
+  </div>
+  
+  <div class="container">
+  <div class="bill electricity" onclick="navigateTo('electricity_bill_page.html');">
+    <div class="bill-info">Electricity Bill</div>
+  </div>
+  <div class="bill water" onclick="navigateTo('water_bill_page.html');">
+    <div class="bill-info">Water Bill</div>
+  </div>
+  <div class="bill dth" onclick="navigateTo('dth_bill_page.html');">
+    <div class="bill-info">DTH Bill</div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

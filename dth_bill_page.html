@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DTH Bill Page</title>
+  <link rel="stylesheet" href="dth.css">
+</head>
+<body>
+  <div class="container">
+    <h2>DTH Bill </h2>
+    <div class="form-group">
+      <label for="customerId">Customer ID:</label>
+      <input type="text" id="customerId" placeholder="Enter Customer ID">
+    </div>
+    <div class="form-group">
+      <label for="customerName">Customer Name:</label>
+      <input type="text" id="customerName" placeholder="Enter Customer Name">
+    </div>
+    <div class="form-group">
+        <label for="billId">DTH Bill Id:</label>
+        <input type="text" id="billId" placeholder="Enter Customer Bill Id">
+      </div>
+    <div class="form-group">
+      <label for="dthOperator">Select DTH Operator:</label>
+      <select id="dthOperator">
+        <option value="">Select</option>
+        <option value="Airtel">Airtel</option>
+        <option value="DishTV">DishTV</option>
+        <option value="Tata Sky">Tata Sky</option>
+        <option value="Sun Direct">Sun Direct</option>
+        <option value="Videocon D2H">Videocon D2H</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="month">Select Month:</label>
+      <select id="month">
+        <option value="">Select</option>
+        <option value="january">January</option>
+        <option value="february">February</option>
+        <option value="march">March</option>
+      </select>
+    </div>
+    <button onclick="showDTHGraph()">Show DTH Graph</button>
+    <button id="resetDthButton" onclick="resetDTHGraph()">Reset</button>
+    <div class="graph-container">
+        <canvas id="dthChart" width="400" height="200"></canvas>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="dth.js"></script>
+</body>
+</html>
